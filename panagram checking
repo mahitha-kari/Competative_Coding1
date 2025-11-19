@@ -1,0 +1,8 @@
+class Solution:
+    def isPanagram(self,s):
+        #your code hereclass Solution:
+        letter = set()
+        for i in s.lower():
+           if 'a'<= i <='z':
+             letter.add(i)
+        return len(letter)==26     
