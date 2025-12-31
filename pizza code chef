@@ -1,0 +1,13 @@
+T = int(input())
+for _ in range(T):
+    A, B = map(int, input().split())
+    
+    small_value = 100 / A
+    large_value = 225 / B
+    
+    if small_value > large_value:
+        print("Small")
+    elif small_value < large_value:
+        print("Large")
+    else:
+        print("Equal")
