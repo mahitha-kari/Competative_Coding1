@@ -1,0 +1,11 @@
+s = input().strip()
+
+# Case 1: input like "3 7"
+if " " in s:
+    N, M = map(int, s.split())
+# Case 2: input like "37"
+else:
+    N = int(s[0])
+    M = int(s[1])
+
+print(min(N, M - N))
